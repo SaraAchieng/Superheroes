@@ -40,19 +40,17 @@ The Hero Power Management System is a web application that allows users to manag
 
      1. *Clone the Repository:*
       git clone https://github.com/SaraAchieng/Superheroes
+
+     2. Open in Visual Studio Code or your preferred IDE:
+      bash
+        $ code .
    
-     2. *Create a virtual environment:*
-      pipenv install
-      pipenv shell
-
-     3. *Install the required packages:*
-      pip install -r requirements.txt
-
-     4. *Set up the database:*
-      from app import db
-      db.create_all()
+     3. *Set up the virtual environment: This project uses pipenv for managing dependencies.*
+      bash
+        $ pipenv install
+        $ pipenv shell
     
-     5. *Run the application:* 
+     4. *Run the application:* 
       flask run
 
 ## API Endpoints

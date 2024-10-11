@@ -17,6 +17,10 @@ migrate = Migrate(app, db)
 from models import Hero, Power, HeroPower
 
 # Routes
+@app.route('/')
+def index():
+    return '<h1>Welcome to Superheroes</h1>'
+
 @app.route('/heroes', methods=['GET'])
 def get_heroes():
     heroes = Hero.query.all()
